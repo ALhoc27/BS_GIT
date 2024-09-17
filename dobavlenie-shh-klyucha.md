@@ -52,8 +52,14 @@ cat /Users/USERNAME/.ssh/id_rsa.pub
 
 </details>
 
+**Шаг 3:** Добавьте новый SSH-ключ
 
+После входа в аккаунт **GitHub**, перейдите в верхний правый угол и нажмите на свой аватар, затем выберите «<mark style="color:orange;">**Settings**</mark>» (Настройки).
 
-> В finder, `command+shift+G`
->
-> /Users/alexander/.ssh
+→ В левой панели выберите «<mark style="color:orange;">**SSH and GPG keys**</mark>» (SSH-ключи)\
+→ New SSH key» (Новый SSH-ключ)
+
+* В поле «**Title**» (Заголовок) дайте вашему ключу описательное имя
+* В поле «**Key**» (Ключ) вставьте ваш публичный SSH-ключ, который вы скопировали на шаге 2.
+
+→  «Add SSH key» (Добавить SSH-ключ).
