@@ -2,9 +2,9 @@
 
 ## Загрузить проект из IntelliJ IDEA в новый репозиторию GitHub
 
-**1.** [Создание нового репозитория на **GitHub**](#user-content-fn-2)[^2]
+**1.** [Создание нового репозитория на **GitHub**](#user-content-fn-1)[^1]
 
-**2.** [Инициализация **Git** в **IntelliJ IDEA**](#user-content-fn-3)[^3]
+**2.** [Инициализация **Git** в **IntelliJ IDEA**](#user-content-fn-2)[^2]
 
 **3.** Связывание локального проекта с удалённым репозиторием
 
@@ -24,6 +24,12 @@
     {% endcode %}
 * Замените `your-username` на ваше имя пользователя GitHub, а `your-repo-name` на имя вашего репозитория.
 
+**1.** Откройте свой проект в IntelliJ IDEA.
+
+**2.** П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](intellij-idea-i-github.md#user-content-fn-7)\[^7]
+
+**3.** В выпадающем списке выберите **Git** и нажмите **OK**. Это инициализирует Git в вашем проекте.
+
 {% tabs %}
 {% tab title="1. Создание нового репозитория на GitHub:" %}
 1. Войдите в свой аккаунт GitHub.
@@ -35,7 +41,7 @@
 **Инициализация Git в IntelliJ IDEA:**
 
 2. Откройте свой проект в IntelliJ IDEA.
-3. П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-5)[^5]
+3. П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-3)[^3]
 4. В выпадающем списке выберите **Git** и нажмите **OK**. Это инициализирует Git в вашем проекте.
 {% endtab %}
 
@@ -56,16 +62,16 @@
 {% endtab %}
 {% endtabs %}
 
-1. #### **Создание нового репозитория на GitHub:**
+1. **Создание нового репозитория на GitHub:**
 
 * Войдите в свой аккаунт GitHub.
 * Перейдите на вкладку **Repositories** и нажмите кнопку **New**.
 * Нажмите **Create repository**.
 
-2. #### **Инициализация Git в IntelliJ IDEA:**
+2. **Инициализация Git в IntelliJ IDEA:**
 
 * Откройте свой проект в IntelliJ IDEA.
-* П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-6)[^6]
+* П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-4)[^4]
 * В выпадающем списке выберите **Git** и нажмите **OK**. Это инициализирует Git в вашем проекте.
 
 ## Привязать существующий проект в IntelliJ IDEA к новому репозиторию GitHub
@@ -110,8 +116,6 @@
 
 Теперь ваш проект связан с новым репозиторием GitHub. Вы можете делать коммиты, изменения и пушить их в ваш репозиторий на GitHub через IntelliJ IDEA.
 
-
-
 ## Импортировать проект с GitHub в вашу интегрированную среду разработки IntelliJ IDEA
 
 1. Откройте IntelliJ IDEA.
@@ -121,7 +125,22 @@
 5. Укажите локальный путь, куда вы хотите сохранить проект.
 6. Нажмите "Clone".
 
-[^2]: **1.** Войдите в свой аккаунт **GitHub**.
+{% code overflow="wrap" %}
+````
+    ```bash
+    Копировать кодgit remote add origin https://github.com/your-username/your-repo-name.git
+    ```
+    
+````
+{% endcode %}
+
+```
+<!---->
+
+* Замените `your-username` на ваше имя пользователя GitHub, а `your-repo-name` на имя вашего репозитория.
+```
+
+[^1]: **1.** Войдите в свой аккаунт **GitHub**.
 
     **2.** Перейдите на вкладку **Repositories** и нажмите кнопку **New**.
 
@@ -129,30 +148,12 @@
 
     репозиторий
 
-[^3]: **1.** Откройте свой проект в IntelliJ IDEA.
+[^2]: **1.** Откройте свой проект в IntelliJ IDEA.
 
-    **2.** П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-7)[^7]
+    **2.** П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](intellij-idea-i-github.md#user-content-fn-7)\[^7]
 
     **3.** В выпадающем списке выберите **Git** и нажмите **OK**. Это инициализирует Git в вашем проекте.
 
-[^4]: 
+[^3]: <img src=".gitbook/assets/Снимок экрана 2024-09-18 в 11.11.21.png" alt="" data-size="original">
 
-    * Откройте терминал в **IntelliJ** (View → Tool Windows → Terminal).
-
-    <!---->
-
-    *   Выполните следующую команду, чтобы добавить удалённый репозиторий:
-
-        {% code overflow="wrap" %}
-        ```bash
-        Копировать кодgit remote add origin https://github.com/your-username/your-repo-name.git
-        ```
-        {% endcode %}
-
-    <!---->
-
-    * Замените `your-username` на ваше имя пользователя GitHub, а `your-repo-name` на имя вашего репозитория.
-
-[^5]: ![](<.gitbook/assets/Снимок экрана 2024-09-18 в 11.11.21.png>)
-
-[^6]: ![](<.gitbook/assets/Снимок экрана 2024-09-18 в 11.11.21.png>)
+[^4]: <img src=".gitbook/assets/Снимок экрана 2024-09-18 в 11.11.21.png" alt="" data-size="original">
