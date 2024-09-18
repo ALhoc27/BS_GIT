@@ -4,7 +4,7 @@
 
 **1.** [Создание нового репозитория на **GitHub**](#user-content-fn-1)[^1]
 
-**2.** Инициализация **Git** в **IntelliJ IDEA**
+**2.** [Инициализация **Git** в **IntelliJ IDEA**](#user-content-fn-2)[^2]
 
 **3.** Связывание локального проекта с удалённым репозиторием
 
@@ -24,11 +24,9 @@
     {% endcode %}
 * Замените `your-username` на ваше имя пользователя GitHub, а `your-repo-name` на имя вашего репозитория.
 
-**1.** Откройте свой проект в IntelliJ IDEA.
-
-**2.** П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](intellij-idea-i-github.md#user-content-fn-7)\[^7]
-
-**3.** В выпадающем списке выберите **Git** и нажмите **OK**. Это инициализирует Git в вашем проекте.
+1. 1.Откройте свой проект в IntelliJ IDEA.
+2. 2.[Перейдите в меню VCS (Version Control System) → Enable Version Control Integration.](#user-content-fn-3)[^3]
+3. 3.В выпадающем списке выберите Git и нажмите OK. Это инициализирует Git в вашем проекте.
 
 {% tabs %}
 {% tab title="1. Создание нового репозитория на GitHub:" %}
@@ -41,7 +39,7 @@
 **Инициализация Git в IntelliJ IDEA:**
 
 2. Откройте свой проект в IntelliJ IDEA.
-3. П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-3)[^3]
+3. П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-4)[^4]
 4. В выпадающем списке выберите **Git** и нажмите **OK**. Это инициализирует Git в вашем проекте.
 {% endtab %}
 
@@ -71,7 +69,7 @@
 2. **Инициализация Git в IntelliJ IDEA:**
 
 * Откройте свой проект в IntelliJ IDEA.
-* П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-4)[^4]
+* П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-5)[^5]
 * В выпадающем списке выберите **Git** и нажмите **OK**. Это инициализирует Git в вашем проекте.
 
 ## Привязать существующий проект в IntelliJ IDEA к новому репозиторию GitHub
@@ -146,6 +144,12 @@
 
     **3.** Нажмите **Create repository**
 
-[^3]: <img src=".gitbook/assets/Снимок экрана 2024-09-18 в 11.11.21.png" alt="" data-size="original">
+[^2]: **1.** Откройте свой проект в IntelliJ IDEA.\
+    **2.**  [Перейдите в меню VCS (Version Control System) → Enable Version Control Integration.](#user-content-fn-6)[^6] \
+    **3.** В выпадающем списке выберите Git и нажмите OK. Это инициализирует Git в вашем проекте.
 
-[^4]: <img src=".gitbook/assets/Снимок экрана 2024-09-18 в 11.11.21.png" alt="" data-size="original">
+[^3]: ![](broken-reference)
+
+[^4]: 
+
+[^5]: 
