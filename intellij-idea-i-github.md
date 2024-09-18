@@ -161,9 +161,13 @@ git push -u origin master
 
     **2.** Добавим удалённый репозиторий:
 
+{% code overflow="wrap" %}
+````
     ```bash
     git remote add origin https://github.com/ALhoc27/BS_GIT
     ```
+````
+{% endcode %}
 
     ![](<.gitbook/assets/Снимок экрана 2024-09-18 в 13.47.24.png>)
 
