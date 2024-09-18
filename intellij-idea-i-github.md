@@ -4,7 +4,7 @@
 
 **1.** [Создание нового репозитория на **GitHub**](#user-content-fn-1)[^1]
 
-**2.** [Инициализация **Git** в **IntelliJ IDEA**](#user-content-fn-2)[^2]
+**2.** Инициализация **Git** в **IntelliJ IDEA**
 
 **3.** Связывание локального проекта с удалённым репозиторием
 
@@ -145,14 +145,6 @@
     **2.** Перейдите на вкладку **Repositories** и нажмите кнопку **New**.
 
     **3.** Нажмите **Create repository**
-
-    репозиторий
-
-[^2]: **1.** Откройте свой проект в IntelliJ IDEA.
-
-    **2.** П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](intellij-idea-i-github.md#user-content-fn-7)\[^7]
-
-    **3.** В выпадающем списке выберите **Git** и нажмите **OK**. Это инициализирует Git в вашем проекте.
 
 [^3]: <img src=".gitbook/assets/Снимок экрана 2024-09-18 в 11.11.21.png" alt="" data-size="original">
 
