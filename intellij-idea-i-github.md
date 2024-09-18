@@ -6,23 +6,15 @@
 
 **2.** [Инициализация **Git** в **IntelliJ IDEA**](#user-content-fn-2)[^2]
 
-**3.** Связывание локального проекта с удалённым репозиторием
+**3.** [Связывание локального проекта с удалённым репозиторием](#user-content-fn-3)[^3]
 
-**4.** Добавление файлов в репозиторий
+**4.** [Добавление файлов в репозиторий](#user-content-fn-4)[^4]
 
-**5.** Создание первого коммита
+**5.** [Создание первого коммита](#user-content-fn-5)[^5]
 
-**6.** Отправка кода в удалённый репозиторий
+**6.** [Отправка кода в удалённый репозиторий](#user-content-fn-6)[^6]
 
-* Откройте терминал в **IntelliJ** (View → Tool Windows → Terminal).
-*   Выполните следующую команду, чтобы добавить удалённый репозиторий:
 
-    {% code overflow="wrap" %}
-    ```
-    git remote add origin https://github.com/your-username/your-repo-name.git
-    ```
-    {% endcode %}
-* Замените `your-username` на ваше имя пользователя GitHub, а `your-repo-name` на имя вашего репозитория.
 
 {% tabs %}
 {% tab title="1. Создание нового репозитория на GitHub:" %}
@@ -35,7 +27,7 @@
 **Инициализация Git в IntelliJ IDEA:**
 
 2. Откройте свой проект в IntelliJ IDEA.
-3. П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-3)[^3]
+3. П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-7)[^7]
 4. В выпадающем списке выберите **Git** и нажмите **OK**. Это инициализирует Git в вашем проекте.
 {% endtab %}
 
@@ -65,7 +57,7 @@
 2. **Инициализация Git в IntelliJ IDEA:**
 
 * Откройте свой проект в IntelliJ IDEA.
-* П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-4)[^4]
+* П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-8)[^8]
 * В выпадающем списке выберите **Git** и нажмите **OK**. Это инициализирует Git в вашем проекте.
 
 ## Привязать существующий проект в IntelliJ IDEA к новому репозиторию GitHub
@@ -148,6 +140,36 @@
 
     **3.** В выпадающем списке выберите **Git** и нажмите OK. Это инициализирует **Git** в вашем проекте.
 
-[^3]: 
+[^3]: **1.** Откройте терминал в **IntelliJ** (View → Tool Windows → Terminal).
 
-[^4]: 
+    **2.** Добавим удалённый репозиторий:
+
+    {% code overflow="wrap" %}
+    ```
+    git remote add origin https://github.com/ALhoc27/BS_GIT
+    ```
+    {% endcode %}
+
+    ![](<.gitbook/assets/Снимок экрана 2024-09-18 в 13.47.24.png>)
+
+[^4]: Добавьте файлы для коммита:
+
+    ```bash
+    git add .
+    ```
+
+[^5]: Сделайте первый коммит:
+
+    ```bash
+    git commit -m "Initial commit"
+    ```
+
+[^6]: Отправьте проект на GitHub:
+
+    ```bash
+    git push -u origin master
+    ```
+
+[^7]: 
+
+[^8]: 
