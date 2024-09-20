@@ -54,16 +54,29 @@ git commit -m "Initial commit"
 git push -u origin master
 ```
 
-Эта команда отправляет все изменения в ветку `master` удалённого репозитория `origin` (который был настроен в шаге 3). Флаг `-u` задаёт, что это основная ветка для последующих изменений.\
-
+Эта команда отправляет все изменения в ветку `master` удалённого репозитория `origin` (который был настроен в шаге 3). Флаг `-u` задаёт, что это основная ветка для последующих изменений.\\
 {% endtab %}
 {% endtabs %}
 
+## Загрузить проект из GitHub в IntelliJ IDEA
+
+**1.** [Скопируйте URL репозитория на GitHub](#user-content-fn-7)[^7]
+
+**2.** [Откройте IntelliJ IDEA](#user-content-fn-8)[^8]
+
+**3.** [Клонирование репозитория](#user-content-fn-9)[^9]
 
 
 
 
-1. **Создание нового репозитория на GitHub:**
+
+
+
+
+
+
+
+
 
 * Войдите в свой аккаунт GitHub.
 * Перейдите на вкладку **Repositories** и нажмите кнопку **New**.
@@ -72,7 +85,7 @@ git push -u origin master
 2. **Инициализация Git в IntelliJ IDEA:**
 
 * Откройте свой проект в IntelliJ IDEA.
-* П[ерейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.](#user-content-fn-7)[^7]
+* Перейдите в меню **VCS** (Version Control System) → **Enable Version Control Integration**.
 * В выпадающем списке выберите **Git** и нажмите **OK**. Это инициализирует Git в вашем проекте.
 
 ## Привязать существующий проект в IntelliJ IDEA к новому репозиторию GitHub
@@ -103,19 +116,22 @@ git push -u origin master
    * Введите свои учетные данные GitHub, если требуется.
    * Вставьте скопированный URL репозитория.
    * Нажмите "Share".
-6.  **Закоммитьте и запушьте изменения:**
+6. **Закоммитьте и запушьте изменения:**
+   * После привязки к репозиторию выполните команды:
 
-    * После привязки к репозиторию выполните команды:
+{% code overflow="wrap" %}
+````
+```bash
+git add .
+git commit -m "Initial commit"
+git push origin master
+```
+````
+{% endcode %}
 
-    {% code overflow="wrap" %}
-    ```bash
-    git add .
-    git commit -m "Initial commit"
-    git push origin master
-    ```
-    {% endcode %}
-
-    * (Замените "master" на имя вашей ветки, если она отличается).
+```
+* (Замените "master" на имя вашей ветки, если она отличается).
+```
 
 Теперь ваш проект связан с новым репозиторием GitHub. Вы можете делать коммиты, изменения и пушить их в ваш репозиторий на GitHub через IntelliJ IDEA.
 
@@ -153,7 +169,7 @@ git push -u origin master
 
     **2.** Перейдите в меню **VCS** (Version Control System) → Enable Version Control Integration.
 
-    ![](<.gitbook/assets/Снимок экрана 2024-09-18 в 11.11.21.png>)
+    <img src=".gitbook/assets/Снимок экрана 2024-09-18 в 11.11.21.png" alt="" data-size="original">
 
     **3.** В выпадающем списке выберите **Git** и нажмите OK. Это инициализирует **Git** в вашем проекте.
 
@@ -165,7 +181,7 @@ git push -u origin master
     git remote add origin https://github.com/ALhoc27/BS_GIT
     ```
 
-    ![](<.gitbook/assets/Снимок экрана 2024-09-18 в 13.47.24.png>)
+    <img src=".gitbook/assets/Снимок экрана 2024-09-18 в 13.47.24 (1).png" alt="" data-size="original">
 
 [^4]: Добавьте файлы для коммита:
 
@@ -185,4 +201,19 @@ git push -u origin master
     git push -u origin master
     ```
 
-[^7]: 
+[^7]: Зайдите на страницу нужного репозитория на **GitHub** и и скопируйте URL репозитория
+
+    ![](<.gitbook/assets/Снимок экрана 2024-09-18 в 13.47.24.png>)
+
+[^8]: ⚫︎ Если у вас уже запущен другой проект, выберите **File → Close Project**.\
+
+
+    ⚫︎ Теперь вы должны увидеть начальный экран IntelliJ IDEA.
+
+[^9]: ⚫︎ На начальном экране выберите **Get from VCS** или перейдите в меню **File → New → Project from Version Control**.
+
+    \
+    ⚫︎ В поле **URL** вставьте скопированный URL репозитория с GitHub.
+
+    \
+    ⚫︎ Укажите папку, в которую будет склонирован проект, и нажмите **Clone**.
