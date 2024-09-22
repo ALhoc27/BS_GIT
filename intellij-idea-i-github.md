@@ -7,20 +7,31 @@
 **1.** [Создание нового репозитория на **GitHub**](#user-content-fn-1)[^1]
 
 **2.** [Открыть терминал в **IntelliJ IDEA**](#user-content-fn-2)[^2]
+
+**3.** Инициализация Git и подключение удалённого репозитория:
+
+<pre class="language-bash" data-full-width="true"><code class="lang-bash">git init  // Инициализировать Git, если это ещё не сделано
+git add . // Добавить файлы в отслеживание Git
+git commit -m "Initial commit" //  Сделать первый коммит
+<a data-footnote-ref href="#user-content-fn-3">git remote add origin https://github.com/ALhoc27/BS_GIT</a> // добавить р
+
+</code></pre>
+
+4\.&#x20;
 {% endtab %}
 
 {% tab title="Графическим интерфейсом IntelliJ IDEA" %}
-**1.** [Создание нового репозитория на **GitHub**](#user-content-fn-3)[^3]
+**1.** [Создание нового репозитория на **GitHub**](#user-content-fn-4)[^4]
 
-**2.** [Инициализация **Git** в **IntelliJ IDEA**](#user-content-fn-4)[^4]
+**2.** [Инициализация **Git** в **IntelliJ IDEA**](#user-content-fn-5)[^5]
 
-**3.** [Связывание локального проекта с удалённым репозиторием](#user-content-fn-5)[^5]
+**3.** [Связывание локального проекта с удалённым репозиторием](#user-content-fn-6)[^6]
 
-**4.** [Добавление файлов в репозиторий](#user-content-fn-6)[^6]
+**4.** [Добавление файлов в репозиторий](#user-content-fn-7)[^7]
 
-**5.** [Создание первого коммита](#user-content-fn-7)[^7]
+**5.** [Создание первого коммита](#user-content-fn-8)[^8]
 
-**6.** [Отправка кода в удалённый репозиторий](#user-content-fn-8)[^8]
+**6.** [Отправка кода в удалённый репозиторий](#user-content-fn-9)[^9]
 {% endtab %}
 
 {% tab title="Обьяснения" %}
@@ -64,11 +75,11 @@ git push -u origin master
 
 ## Загрузить проект из GitHub в IntelliJ IDEA
 
-**1.** [Скопируйте URL репозитория на GitHub](#user-content-fn-9)[^9]
+**1.** [Скопируйте URL репозитория на GitHub](#user-content-fn-10)[^10]
 
-**2.** [Откройте IntelliJ IDEA](#user-content-fn-10)[^10]
+**2.** [Откройте IntelliJ IDEA](#user-content-fn-11)[^11]
 
-**3.** [Клонирование репозитория](#user-content-fn-11)[^11]
+**3.** [Клонирование репозитория](#user-content-fn-12)[^12]
 
 
 
@@ -153,13 +164,15 @@ git push origin master
 
 [^2]: В **IntelliJ IDEA** перейди в терминал через меню `View` → `Tool Windows` → `Terminal` или нажми <mark style="color:orange;">**`Alt+F12`**</mark>
 
-[^3]: **1.** Войдите в свой аккаунт **GitHub**.
+[^3]: добавления удалённого репозитория к вашему локальному проекту
+
+[^4]: **1.** Войдите в свой аккаунт **GitHub**.
 
     **2.** Перейдите на вкладку **Repositories** и нажмите кнопку **New**.
 
     **3.** Нажмите **Create repository**
 
-[^4]: **1.** Откройте свой проект в **IntelliJ IDEA.**
+[^5]: **1.** Откройте свой проект в **IntelliJ IDEA.**
 
     **2.** Перейдите в меню **VCS** (Version Control System) → Enable Version Control Integration.
 
@@ -167,7 +180,7 @@ git push origin master
 
     **3.** В выпадающем списке выберите **Git** и нажмите OK. Это инициализирует **Git** в вашем проекте.
 
-[^5]: **1.** Откройте терминал в **IntelliJ** (View → Tool Windows → Terminal).
+[^6]: **1.** Откройте терминал в **IntelliJ** (View → Tool Windows → Terminal).
 
     **2.** Добавим удалённый репозиторий:
 
@@ -177,34 +190,34 @@ git push origin master
 
     <img src=".gitbook/assets/Снимок экрана 2024-09-18 в 13.47.24 (1).png" alt="" data-size="original">
 
-[^6]: Добавьте файлы для коммита:
+[^7]: Добавьте файлы для коммита:
 
     ```bash
     git add .
     ```
 
-[^7]: Сделайте первый коммит:
+[^8]: Сделайте первый коммит:
 
     ```bash
     git commit -m "Initial commit"
     ```
 
-[^8]: Отправьте проект на GitHub:
+[^9]: Отправьте проект на GitHub:
 
     ```bash
     git push -u origin master
     ```
 
-[^9]: Зайдите на страницу нужного репозитория на **GitHub** и и скопируйте URL репозитория
+[^10]: Зайдите на страницу нужного репозитория на **GitHub** и и скопируйте URL репозитория
 
     ![](<.gitbook/assets/Снимок экрана 2024-09-18 в 13.47.24.png>)
 
-[^10]: ⚫︎ Если у вас уже запущен другой проект, выберите **File → Close Project**.\
+[^11]: ⚫︎ Если у вас уже запущен другой проект, выберите **File → Close Project**.\
 
 
     ⚫︎ Теперь вы должны увидеть начальный экран IntelliJ IDEA.
 
-[^11]: ⚫︎ На начальном экране выберите **Get from VCS** или перейдите в меню **File → New → Project from Version Control**.
+[^12]: ⚫︎ На начальном экране выберите **Get from VCS** или перейдите в меню **File → New → Project from Version Control**.
 
     \
     ⚫︎ В поле **URL** вставьте скопированный URL репозитория с GitHub.
