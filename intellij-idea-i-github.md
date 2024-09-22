@@ -13,7 +13,7 @@
 <pre class="language-bash" data-full-width="true"><code class="lang-bash">git init  // Инициализировать Git, если это ещё не сделано
 git add . // Добавить файлы в отслеживание Git
 git commit -m "Initial commit" //  Сделать первый коммит
-<a data-footnote-ref href="#user-content-fn-3">git remote add origin https://github.com/ALhoc27/BS_GIT</a> // добавить р
+git remote add origin https://github.com/ALhoc27/BS_GIT // добавить р
 
 </code></pre>
 
