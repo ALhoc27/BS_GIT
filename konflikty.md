@@ -62,7 +62,26 @@ System.out.println("Hello from both branches");
 {% endtab %}
 
 {% tab title="Решение конфликтов через локальный репозиторий (CLI)" %}
-<figure><img src=".gitbook/assets/Без имени-1 копия.png" alt=""><figcaption></figcaption></figure>
+
+
+Иногда конфликты проще решать локально, особенно если файлы содержат сложные изменения. Вот как это сделать:
+
+1. **Обновление локальной копии с удаленного репозитория**:
+   * Сначала стяни изменения с удаленного репозитория (например, с ветки `main`):
+
+```bash
+git fetch origin
+git checkout main
+git pull origin main
+```
+
+2. &#x20;**Попытка слияния с веткой, в которой есть изменения**:\
+   \* Теперь попытайся слить нужную ветку:
+3.
+
+```bash
+git checkout feature-branch
+git merge main
+```
 {% endtab %}
 {% endtabs %}
-
